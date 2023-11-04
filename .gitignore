@@ -1,3 +1,17 @@
+# node modules
+npm-debug.log
+node_modules
+package-lock.json
+yarn.lock
+.vscode
+build/
+.editorconfig
+.eslintrc
+.gitattributes
+.npmrc
+.travis.yml
+.vscode/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
