@@ -4,15 +4,11 @@ import random
 
 def generate_unique_code():
     LENGTH = 6
-
-    exists = True
-    while exists:
+    while True:
         code = ''.join(random.choices(string.ascii_uppercase, k=LENGTH))
         exists = False
-        for x in Room.objects.all():
-            if x.code == code:
-                exists = True
-    return code
+        if Room.objects.filter(code=code).count() == 0:
+            return code
 
 
 # Create your models here.
