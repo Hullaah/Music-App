@@ -1,3 +1,11 @@
-export default function App() {
-  return <h1>Testing react code</h1>
+
+
+import  { HomePage, Content } from './HomePage';
+export default function App () {
+  return (
+    <>
+      <HomePage />
+      <Content />
+    </>
+  );
 }
