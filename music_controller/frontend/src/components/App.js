@@ -1,6 +1,4 @@
-
-
-import  { HomePage, Content } from './HomePage';
+import  HomePage from './HomePage';
 export default function App () {
   return (
     <>
